@@ -1,5 +1,6 @@
 // 基于准备好的dom，初始化echarts实例
-		        var myChart = echarts.init(document.getElementById('charts_left'));
+window.onload=function(){
+	var myChart = echarts.init(document.getElementById('charts_left'));
 
 option = {
 	title: {
@@ -45,3 +46,5 @@ myChart.on('click',function(params){
 $(window).resize(function (){
 	myChart.resize()
 })
+
+}
